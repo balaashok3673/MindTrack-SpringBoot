@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.Comment;
 
+import java.util.List;
+
 @Entity
 @Table(name ="tasks")
 public class TaskModel {
@@ -39,4 +41,6 @@ public class TaskModel {
     }
 
 
-}
+    }
+
+
