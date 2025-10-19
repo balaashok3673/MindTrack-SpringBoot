@@ -6,17 +6,12 @@ services:
     container_name: mind_tracker
     environment:
       POSTGRES_USER: bala
-      POSTGRES_PASSWORD : bala@1234
+      POSTGRES_PASSWORD: bala@1234
       POSTGRES_DB: mindTracker
-
-
     ports:
-        - "5432:5432"
-
+      - "5432:5432"
     volumes:
-      - mindTracker:/var/lib/postgresql/data
-
-
+      - mindTracker_data:/var/lib/postgresql/data
 
 volumes:
   mindTracker_data:
